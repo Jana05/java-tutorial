@@ -9,21 +9,21 @@
  * 
  */
 public class Line {
-private int x;
-private int y;
+private int x2;
+private int y2;
 private int x1;
 private int y1;
 public int getX() {
-	return x;
+	return x2;
 }
 public void setX(int x) {
-	this.x = x;
+	this.x2 = x;
 }
 public int getY() {
-	return y;
+	return y2;
 }
 public void setY(int y) {
-	this.y = y;
+	this.y2 = y;
 }
 public int getX1() {
 	return x1;
@@ -39,7 +39,7 @@ public void setY1(int y1) {
 }
 @Override
 public String toString() {
-	return "Line [x=" + x + ", y=" + y + ", x1=" + x1 + ", y1=" + y1 + "]";
+	return "Line [x=" + x2 + ", y=" + y2 + ", x1=" + x1 + ", y1=" + y1 + "]";
 }
 
 }
