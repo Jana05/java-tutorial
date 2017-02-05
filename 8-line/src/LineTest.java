@@ -11,10 +11,10 @@
 public class LineTest {
 	public static void main(String[] args) {
 		Line line =new Line();
-		line.setX(1);
-		line.setY(1);
-		line.setX1(4);
-		line.setY1(4);
+		line.setX1(1);
+		line.setY1(1);
+		line.setX2(4);
+		line.setY2(5);
 		System.out.println(line);
 	}
 

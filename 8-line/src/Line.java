@@ -13,17 +13,17 @@ private int x2;
 private int y2;
 private int x1;
 private int y1;
-public int getX() {
+public int getX2() {
 	return x2;
 }
-public void setX(int x) {
-	this.x2 = x;
+public void setX2(int x2) {
+	this.x2 = x2;
 }
-public int getY() {
+public int getY2() {
 	return y2;
 }
-public void setY(int y) {
-	this.y2 = y;
+public void setY2(int y2) {
+	this.y2 = y2;
 }
 public int getX1() {
 	return x1;
@@ -39,7 +39,7 @@ public void setY1(int y1) {
 }
 @Override
 public String toString() {
-	return "Line [x=" + x2 + ", y=" + y2 + ", x1=" + x1 + ", y1=" + y1 + "]";
+	return "Line [x2=" + x2 + ", y2=" + y2 + ", x1=" + x1 + ", y1=" + y1 + "]";
 }
 
 }
