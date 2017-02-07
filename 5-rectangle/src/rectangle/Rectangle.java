@@ -16,19 +16,19 @@ import java.io.InputStreamReader;
 public class Rectangle {
 
 	public static void main(String[] args) throws IOException {
-		
+
 		InputStreamReader reader = new InputStreamReader(System.in);
-		BufferedReader br=new BufferedReader(reader);
+		BufferedReader br = new BufferedReader(reader);
 		System.out.println("Enter rectangle width :");
-		String w= br.readLine();
+		String w = br.readLine();
 		System.out.println("Enter height :");
-		String h=br.readLine();
-		int a =Integer.parseInt(w);
+		String h = br.readLine();
+		int a = Integer.parseInt(w);
 		int b = Integer.parseInt(h);
-		 int area = a*b;
-		 int circumference=2*(a+b);
-		 System.out.println("Area :"+area);
-		 System.out.println("Circumference :"+circumference);
-}
+		int area = a * b;
+		int circumference = 2 * (a + b);
+		System.out.println("Area :" + area);
+		System.out.println("Circumference :" + circumference);
+	}
 
 }

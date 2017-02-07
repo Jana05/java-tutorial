@@ -11,11 +11,12 @@
 public class LineTest {
 	public static void main(String[] args) {
 		Line line =new Line();
-		line.setX1(1);
-		line.setY1(1);
+		line.setX1(2);
+		line.setY1(2);
 		line.setX2(4);
 		line.setY2(5);
 		System.out.println(line);
-	}
-
+		System.out.println("The squart value is");
+		line.calDistance();
+		}
 }
