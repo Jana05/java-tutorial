@@ -16,6 +16,6 @@ public class LineTest {
 		line.setX2(4);
 		line.setY2(5);
 		System.out.println(line);
-	}
-
+		line.caldistance();
+		}
 }
