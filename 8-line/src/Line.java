@@ -14,7 +14,8 @@ public class Line {
 	private int y2;
 	private int x1;
 	private int y1;
-
+	
+	
 	public int getX2() {
 		return x2;
 	}
@@ -52,7 +53,7 @@ public class Line {
 		return "Line [x2=" + x2 + ", y2=" + y2 + ", x1=" + x1 + ", y1=" + y1 + "]";
 }
 
-	public void caldistance() {
+	public void calDistance() {
 		
 	 double distance=Math.sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
 	 System.out.println(distance);
