@@ -15,6 +15,7 @@ public class Vehicle {
 		private String color;
 		private String model;
 		private int speed;
+
 		public String getBrand() {
 			return brand;
 		}
@@ -43,5 +44,6 @@ public class Vehicle {
 		public String toString() {
 			return "Vehicle [brand=" + brand + ", color=" + color + ", model=" + model + ", speed=" + speed + "]";
 		}
+		
 		
 }

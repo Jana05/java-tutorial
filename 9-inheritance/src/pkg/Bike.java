@@ -9,15 +9,33 @@ package pkg;
  * @since Feb 7, 2017 7:03:32 PM
  * 
  */
-public class Bike extends Vehicle {
-
+public class Bike extends Vehicle{
 	
-	public static void main(String[] args) {
-		Bike bike =new Bike();
-		bike.setBrand("Bajaj");
-		bike.setColor("Black");
-		bike.setModel("DTSi");
-		bike.setSpeed(120);;
-		System.out.println(bike);
-		}
+	private boolean kickStart;
+	private boolean electricStart;
+
+
+	public boolean isKickStart() {
+		return kickStart;
+	}
+
+	public void setKickStart(boolean kickStart) {
+		this.kickStart = kickStart;
+	}
+
+	public boolean isElectricStart() {
+		return electricStart;
+	}
+
+	public void setElectricStart(boolean electricStart) {
+		this.electricStart = electricStart;
+	}
+
+	@Override
+	public String toString() {
+		return "Bike [kickStart=" + kickStart + ", electricStart=" + electricStart + ", brand()=" + getBrand()
+				+ ", color()=" + getColor() + ", model()=" + getModel() + ", speed()=" + getSpeed() + "]";
+	}
+	
+	
 }
