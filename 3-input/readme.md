@@ -1,4 +1,4 @@
-# Input Function
+#Input Function
 - This project we are create get a input from a user.
 ##Definition
 - To make a input form user we need a readline() method.
