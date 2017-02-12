@@ -1,0 +1,10 @@
+- #Inheritance
+- ##Base calss - Vehicle
+- First we are create common attribute in Vehicle class
+- Then it's to generate setter,getter and tostring()
+- ##Sub class-Bike
+- In this sub class we can extend the attributes of base class 
+- And it can create only  in sub class attributes
+-  ### Sub class BikeTest
+- Create object using get the value of attribute
+- Finally that object values are print by to string.
