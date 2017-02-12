@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Overloading;
+package overloading;
 
 /**
  * @author Vijayan Srinivasan
