@@ -21,8 +21,6 @@ public class Rectangle extends Shape {
 		
 		System.out.println("Enter bredth:");
 		this.bredth = scanner.nextInt();
-		
-		//scanner.close();
 	}
 
 	public void printOutput() {
