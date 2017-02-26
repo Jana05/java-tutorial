@@ -17,7 +17,7 @@ import com.mysql.jdbc.Driver;
  * @since Feb 15, 2017 11:44:40 AM
  * 
  */
-public class ExampleInsert {
+public class InsertToDept {
 
 	public static void main(String[] args) throws SQLException {
 		Driver driver = new Driver();
