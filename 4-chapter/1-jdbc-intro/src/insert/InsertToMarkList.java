@@ -17,7 +17,7 @@ import com.mysql.jdbc.Driver;
  * @since Feb 15, 2017 6:03:13 PM
  * 
  */
-public class Example2 {
+public class InsertToMarkList {
 
 	public static void main(String[] args) throws SQLException {
 		Driver driver = new Driver();
