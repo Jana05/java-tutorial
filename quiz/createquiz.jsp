@@ -3,7 +3,7 @@
 
 <% try {
 String subject= request.getParameter("subject");
-Class.forName("oracle.jdbc.driver.OracleDriver");
+Class.forName("com.mysql.jdbc.Driver");
 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/quiz","root","mysql");
 PreparedStatement ps=con.prepareStatement("insert into quizinfo(subject) values('"+subject+"') " );
 int s= ps.executeUpdate();

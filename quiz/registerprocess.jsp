@@ -6,7 +6,7 @@ String username=request.getParameter("username");
 String userpass=request.getParameter("userpass");
 String category=request.getParameter("category");
 String email=request.getParameter("email");
-Class.forName("oracle.jdbc.driver.OracleDriver");
+Class.forName("com.mysql.jdbc.Driver");
 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/quiz","root","mysql");
 PreparedStatement ps=con.prepareStatement("insert into quizregister values(?,?,?,?)");
 

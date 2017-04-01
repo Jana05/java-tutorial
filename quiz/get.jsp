@@ -11,7 +11,7 @@ String name=(String)session.getAttribute("quizname");
 try{
 
 
-Class.forName("oracle.jdbc.driver.OracleDriver");
+Class.forName("com.mysql.jdbc.Driver");
 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/quiz","root","mysql");
 if(count==0){
 PreparedStatement ps1= con.prepareStatement("select min(qid) from quizques where quizname='"+name+"'");

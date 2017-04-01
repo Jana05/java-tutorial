@@ -5,7 +5,7 @@
 <%
 counter++;
  try {
-Class.forName("oracle.jdbc.driver.OracleDriver");
+Class.forName("com.mysql.jdbc.Driver");
 Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/quiz","root","mysql");
 String question= request.getParameter("question");
 String option1= request.getParameter("option1");
