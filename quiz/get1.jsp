@@ -16,7 +16,7 @@ if(count1==0)
 count1=count-1;
 
 Class.forName("oracle.jdbc.driver.OracleDriver");
-Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","oracle");
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/quiz","root","mysql");
 PreparedStatement ps=con.prepareStatement("select answer from quizques where quizname='"+name+"' and qid='"+count1+"' ");
 ResultSet rs=ps.executeQuery();
 if(rs.next()){
@@ -40,7 +40,7 @@ count1=count-2;
 System.out.print("count at get1:"+count);
 
 Class.forName("oracle.jdbc.driver.OracleDriver");
-Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","oracle");
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/quiz","root","mysql");
 PreparedStatement ps=con.prepareStatement("select answer from quizques where quizname='"+name+"' and qid='"+count1+"' ");
 ResultSet rs=ps.executeQuery();
 if(rs.next()){
@@ -60,7 +60,7 @@ if(count>(Integer)session.getAttribute("max"))
 {
 Integer max=(Integer)session.getAttribute("max");
 Class.forName("oracle.jdbc.driver.OracleDriver");
-Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","oracle");
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/quiz","root","mysql");
 PreparedStatement ps=con.prepareStatement("select answer from quizques where quizname='"+name+"' and qid='"+max+"' ");
 ResultSet rs=ps.executeQuery();
 if(rs.next()){

@@ -12,7 +12,7 @@ try{
 
 
 Class.forName("oracle.jdbc.driver.OracleDriver");
-Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","oracle");
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/quiz","root","mysql");
 if(count==0){
 PreparedStatement ps1= con.prepareStatement("select min(qid) from quizques where quizname='"+name+"'");
 PreparedStatement ps2= con.prepareStatement("select max(qid) from quizques where quizname='"+name+"'");

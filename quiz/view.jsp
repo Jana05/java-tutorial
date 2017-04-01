@@ -53,7 +53,7 @@ request.setAttribute("notlogin_msg","Sorry,Please do Login first");
 				String name=(String)session.getAttribute("quizname");
 				try{
 					Class.forName("oracle.jdbc.driver.OracleDriver");
-					Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","oracle");
+					Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/quiz","root","mysql");
 					PreparedStatement ps= con.prepareStatement("select * from quizques where quizname='"+name+"'");
 					ResultSet rs=ps.executeQuery();
 					out.print("<table>");

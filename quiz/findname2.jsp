@@ -7,7 +7,7 @@ String n=request.getParameter("val");
 if(n.length()>0){
 try{
 Class.forName("oracle.jdbc.driver.OracleDriver");
-Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","oracle");
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/quiz","root","mysql");
 
 PreparedStatement ps=con.prepareStatement("select * from quizinfo where subject like '"+n+"%'");
 //ps.setString(1,n);

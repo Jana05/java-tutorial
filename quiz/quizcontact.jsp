@@ -12,7 +12,7 @@ String phone= request.getParameter("phone");
 String message= request.getParameter("message");
  
 Class.forName("oracle.jdbc.driver.OracleDriver");
-Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","oracle");
+Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/quiz","root","mysql");
 
 PreparedStatement ps=con.prepareStatement("insert into quizcontact values(?,?,?,?)");
 ps.setString(1,name);
